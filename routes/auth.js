@@ -9,6 +9,9 @@ const axios = require('axios');
 const search_locations = require('../api/search-locations');
 const fetch = require('node-fetch');
 
+router.get('/', (req, res) => {
+    res.render('register');
+  });
 
 // Route to display the registration form
 router.get('/register', (req, res) => {
