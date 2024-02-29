@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/style_edit.css">
+<div class="edit-publication-form">
+    <h2>Edit Publication</h2>
+    <form action="/update-publication/<%= publication._id %>" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= publication.name %>" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required><%= publication.description %></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

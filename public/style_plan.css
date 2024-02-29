@@ -1,0 +1,105 @@
+.location {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.location img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.location h3 {
+    margin: 10px 0 5px 0;
+}
+
+.location p {
+    margin: 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.country-info,
+#timeInfo {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.country-info img,
+.time-info img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Styling for the time display */
+.time-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.country-details,
+.time-details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.info-text {
+    margin-left: 20px;
+    color: #333;
+    color: white;
+
+}
+
+.content {
+    position: relative;
+    /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.navbar {
+    z-index: 999;
+    /* Ensures navbar is above the video */
+    position: relative;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#myVideoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}

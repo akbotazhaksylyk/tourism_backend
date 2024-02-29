@@ -1,0 +1,50 @@
+<h1>Contact Us</h1>
+<p>We are always happy to help you with choosing and sending you to the best vacation abroad.</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<!-- Google Map -->
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<!-- Contact Information -->
+<div class="contact-info">
+    <p>Follow us on Instagram: <a href="https://www.instagram.com/merey_travel/" target="_blank">@merey_travel</a></p>
+    <p>Contact us on WhatsApp: <a href="https://wa.me/87012928033" target="_blank">+87012928033</a></p>
+</div>
+
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSTHLQdgxdhm4MUzJQNFBci-V6yte0RaQ&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+        var astana = { lat: 51.169392, lng: 71.449074 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: astana
+        });
+        var marker = new google.maps.Marker({
+            position: astana,
+            map: map
+        });
+    }
+</script>
