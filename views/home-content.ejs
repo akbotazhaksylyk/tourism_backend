@@ -98,7 +98,7 @@
 </div>
 
 <!-- This section is for the admin to create new publications -->
-<% if (user && user.username==='akbotazhak' ) { %>
+<% if (user && user.username==='akbota' ) { %>
     <div class="publication-form">
         <h2>Create New Publication</h2>
         <form action="/create-publication" method="post">
@@ -125,7 +125,7 @@
                     <%= publication.description %>
                 </p>
                 <!-- Carousel for images -->
-                <% if (user && user.username==='akbotazhak' ) { %>
+                <% if (user && user.username==='akbota' ) { %>
                     <!-- Admin only: Edit and Delete buttons -->
                     <!-- Link to the edit form -->
                     <a href="/edit-publication/<%= publication._id %>" class="btn btn-info">Edit</a>
