@@ -1,6 +1,7 @@
 open terminal and write: npm start
 
 **deploy:**
+
 registration: https://tourism-backend-180a.onrender.com/
 
 login: https://tourism-backend-180a.onrender.com/login
