@@ -1,5 +1,5 @@
 open terminal and write: npm start
-
+<hr>
 **deploy:** <br>
 registration: https://tourism-backend-180a.onrender.com/<br>
 login: https://tourism-backend-180a.onrender.com/login<br>
